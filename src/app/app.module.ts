@@ -9,9 +9,6 @@ import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './MyComponents/about/about.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DemoComponent } from './MyComponents/demo/demo.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DragDropModule } from '@angular/cdk/drag-drop';
-import { FragdropComponent } from './fragdrop/fragdrop.component';
 
 @NgModule({
   declarations: [
@@ -20,15 +17,12 @@ import { FragdropComponent } from './fragdrop/fragdrop.component';
     TodoItemComponent,
     AddTodComponent,
     AboutComponent,
-    DemoComponent,
-    FragdropComponent
+    DemoComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    DragDropModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
