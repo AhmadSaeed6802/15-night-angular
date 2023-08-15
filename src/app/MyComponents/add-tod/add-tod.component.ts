@@ -9,11 +9,13 @@ import { Todo } from 'src/app/Todo';
 export class AddTodComponent {
 title1!:string;
 desc!:string;
+expiretime !:number
 @Output() todoAdd: EventEmitter<Todo> =new EventEmitter();
 onSubmit(){
   const todo:Todo=new Todo;
   todo.title=this.title1;
   todo.desc=this.desc;
+  todo.expiry=Date.now()+(this.expiretime*1000)
 
   // const sno:number =8;
   
